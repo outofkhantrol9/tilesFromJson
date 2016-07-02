@@ -6,8 +6,8 @@ function tilesFromJson(json) {
 }
 
 tilesFromJson.layerIteration = function layerIteration(json, tiles) {
-	json.layers.forEach(function(layer, i) {
-  	tilesFromJson.xIteration(json, tiles, i);
+  json.layers.forEach(function(layer, i) {
+    tilesFromJson.xIteration(json, tiles, i);
   });
   return tiles;
 };
